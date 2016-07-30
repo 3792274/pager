@@ -3,6 +3,6 @@
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/基于JSP的ThreadLocal分页"/>
         <property name="java-output-path" value="/分页/build/classes"/>
-        <property name="context-root" value="分页"/>
+        <property name="context-root" value="sts"/>
     </wb-module>
 </project-modules>
