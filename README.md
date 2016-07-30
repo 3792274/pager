@@ -14,18 +14,19 @@
 		
 >2.建立存储过程(函数),插入数据
 
-	BEGIN
-		DECLARE i int;
-		set i=1;
-		
-		WHILE i<10000 DO
-			INSERT INTO t_user(username,nickname,password) values(CONCAT('user',i),CONCAT('nickname',i),CONCAT('password',i));
-			set i = i+1;
-			
-	  END WHILE;
+```java
+BEGIN
+	DECLARE i int;
+	set i=1;
 	
-	END
+	WHILE i<10000 DO
+		INSERT INTO t_user(username,nickname,password) values(CONCAT('user',i),CONCAT('nickname',i),CONCAT('password',i));
+		set i = i+1;
+		
+  END WHILE;
 
+END
+```
 
 
 ***
