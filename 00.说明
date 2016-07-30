@@ -19,3 +19,7 @@ BEGIN
 
 END
 
+
+
+3. 基于ServletMyBatis3分页
+	演示访问的URL:http://localhost:8080/sts/user.do?method=list

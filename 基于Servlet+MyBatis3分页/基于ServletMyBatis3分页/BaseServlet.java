@@ -27,7 +27,8 @@ public class BaseServlet extends HttpServlet {
 		
 		try {
 			Method m = this.getClass().getMethod(method, HttpServletRequest.class,HttpServletResponse.class);
-			String path = (String)m.invoke(this.getClass().newInstance(),req, resp);//路径
+//			String path = (String)m.invoke(this.getClass().newInstance(),req, resp);//路径
+			String path = (String)m.invoke(this,req, resp); 
 			
 			if(path.startsWith(REDIRECTPATH)){
 				String rp=path.substring(REDIRECTPATH.length());//redirect:user.jsp,最后跳转到user.jsp
