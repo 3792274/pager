@@ -1,7 +1,8 @@
-# 一个使用 JDBC 、ThreadLocal、JSP、pager-taglib 的分页示例<br>
+#简单的分页 <br>
+###一个使用 JDBC 、ThreadLocal、JSP、pager-taglib 的分页示例
+	>>分页原理、ThrealLocal用法，DAO编写、简单的Mysql存储过程<br>
 
-
-###分页原理、ThrealLocal用法，DAO编写、简单的Mysql存储过程<br>
+###Mybatis的分页
 
 
 
