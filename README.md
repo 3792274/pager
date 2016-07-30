@@ -1,13 +1,13 @@
 #简单的分页 <br>
 ###1.一个使用 JDBC 、ThreadLocal、JSP、pager-taglib 的分页示例
-	 分页原理、ThrealLocal用法，DAO编写、简单的Mysql存储过程<br>
+	>分页原理、ThrealLocal用法，DAO编写、简单的Mysql存储过程<br>
 
 ###2.Mybatis的分页
-	 Mybatis的简单分页
+	 >Mybatis的简单分页<br>
 
 
 
-###数据库说明
+###3数据库说明
 >1.Sql 数据库：
 
 		String user = "root";
@@ -28,14 +28,14 @@ BEGIN
   END WHILE;
 
 END
-```
+```<br>
 
 
 ***
 
-###版权所有@ [配套视频 主讲：ivan](http://www.chuanke.com/2819950-160640.html)
-![ivan](http://web.img.chuanke.com/avatar/9a324150f3de4ef3805080feb73091b6.jpg)
-
+###版权所有@ [配套视频 主讲：ivan]
+>[基于JSP的ThrealLocal分页实现](http://www.chuanke.com/2819950-160640.html)
+>[基于Servlet+MyBatis分页实现](http://www.chuanke.com/2819950-161141.html)
 </br>
 
 
