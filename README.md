@@ -28,15 +28,15 @@ BEGIN
   END WHILE;
 
 END
-```<br>
+```
+<br><br>
 
 
 ***
 
 ###版权所有@ [配套视频 主讲：ivan]
->[基于JSP的ThrealLocal分页实现](http://www.chuanke.com/2819950-160640.html)
->[基于Servlet+MyBatis分页实现](http://www.chuanke.com/2819950-161141.html)
-</br>
+>1、[基于JSP的ThrealLocal分页实现](http://www.chuanke.com/2819950-160640.html)<br>
+>2、[基于Servlet+MyBatis分页实现](http://www.chuanke.com/2819950-161141.html)<br>
 
 
 
