@@ -9,16 +9,49 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <filter>
-    <filter-name>SystemContextFilter</filter-name>
-    <filter-class>基于JSP的ThreadLocal分页.SystemContextFilter</filter-class>
-    <init-param>
-      <param-name>pageSize</param-name>
-      <param-value>15</param-value>
-    </init-param>
-  </filter>
-  <filter-mapping>
-    <filter-name>SystemContextFilter</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
+
+
+<!--  基于JSP的ThreadLocal分页.SystemContextFilter
+	<filter>
+		<filter-name>SystemContextFilter</filter-name>
+		<filter-class>基于JSP的ThreadLocal分页.SystemContextFilter</filter-class>
+		<init-param>
+			<param-name>pageSize</param-name>
+			<param-value>15</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>SystemContextFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+-->
+
+
+<!--  基于JSP的ThreadLocal分页.SystemContextFilter  -->
+
+	<filter>
+		<filter-name>SystemContextFilter</filter-name>
+		<filter-class>基于ServletMyBatis3分页.SystemContextFilter</filter-class>
+		<init-param>
+			<param-name>pageSize</param-name>
+			<param-value>15</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>SystemContextFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>基于ServletMyBatis3分页.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/user.do</url-pattern>
+	</servlet-mapping>
+  
+  
+  
+  
 </web-app>

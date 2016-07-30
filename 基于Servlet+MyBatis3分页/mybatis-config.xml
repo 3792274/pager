@@ -22,7 +22,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	
 	<!-- 定义Map映射器类的别名 -->
 	<typeAliases>
-		<!-- <typeAlias alias="JikeUser" type="jike.book.pojo.JikeUser"/> -->
+		 <typeAlias alias="User" type="基于ServletMyBatis3分页.User"/>
 	</typeAliases>
 	
 
@@ -43,7 +43,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
 
 	<mappers > <!-- 有顺序要求 -->
-
+		<mapper  resource="基于ServletMyBatis3分页/UserMapper.xml" />
 	</mappers> 
 	
 	
