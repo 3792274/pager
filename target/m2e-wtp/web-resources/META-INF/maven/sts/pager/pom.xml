@@ -1,11 +1,69 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
+
+
+	<groupId>sts</groupId>
 	<artifactId>pager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
+
+
+
+
+	<dependencies>
+	
+		
+		<dependency>
+			<groupId>jsptags</groupId>
+			<artifactId>pager-taglib</artifactId>
+			<version>2.0</version>
+		</dependency>
+		
+		
+		<!-- MySql DB Drive dependency -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.39</version>
+		</dependency>
+		
+		
+
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>javax.servlet.jsp.jstl</artifactId>
+			<version>1.2.4</version>
+		</dependency>
+
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+	</dependencies>
+
+
+
+	
 	<build>
+		
 		<sourceDirectory>基于JSP的ThreadLocal分页</sourceDirectory>
+	
 		<resources>
 			<resource>
 				<directory>基于JSP的ThreadLocal分页</directory>
@@ -14,6 +72,8 @@
 				</excludes>
 			</resource>
 		</resources>
+		
+		
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
@@ -23,6 +83,7 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
+			
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
@@ -31,28 +92,10 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			
 		</plugins>
+		
 	</build>
-	<dependencies>
-		<dependency>
-			<groupId>jsptags</groupId>
-			<artifactId>pager-taglib</artifactId>
-			<version>2.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>javax.servlet.jsp.jstl</groupId>
-			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
-			<version>1.2.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.glassfish.web</groupId>
-			<artifactId>javax.servlet.jsp.jstl</artifactId>
-			<version>1.2.4</version>
-		</dependency>
 
 
-	</dependencies>
-	<groupId>sts</groupId>
 </project>

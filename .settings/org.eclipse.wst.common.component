@@ -2,6 +2,7 @@
     <wb-module deploy-name="分页">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/基于JSP的ThreadLocal分页"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/基于Servlet+MyBatis3分页"/>
         <property name="java-output-path" value="/分页/build/classes"/>
         <property name="context-root" value="sts"/>
     </wb-module>
