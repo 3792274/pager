@@ -16,9 +16,9 @@
 * **Maven:**  	     apache-maven-3.3.9
 * **pager-taglib:**  2.0 
 * **Mybatis:**       3.4.1
-* **Struts2:**       
-* **Hibernate:**     
-* **Spring:**       
+* **Struts2:**       2.5
+* **Hibernate:**     5.1.0.Final
+* **Spring:**        4.2.6.RELEASE
 
 
 ###三、数据库说明(详见工程 t_user.sql)
@@ -54,7 +54,7 @@ END
 <br><br>
 ***
 
-###版权原作者所有@ [视频:ivan] & [源代码:ivan]<br>
+###版权原作者所有@ [视频:ivan] & [源代码:ivan]  & [QQ:[383244431](tencent://message/?uin=383244431)]<br>
    ![头像](http://q4.qlogo.cn/g?b=qq&k=v81qK8OG0ZzFnolQ1l9Zag&s=140&t=1371265828&tp=webp)<br><br>
 >1、[基于JSP的ThrealLocal分页实现](http://www.chuanke.com/2819950-160640.html)<br>
 >2、[基于Servlet+MyBatis分页实现](http://www.chuanke.com/2819950-161141.html)<br>
@@ -68,7 +68,7 @@ END
 
 <br><br><br>
 ## 联系方式
-qq:        3792274<br/>
+qq:       [3792274](tencent://message/?uin=3792274)<br> 
 email:     <3792274@qq.com><br/>
 
 <br><br><br>

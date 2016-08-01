@@ -42,7 +42,6 @@ public class SystemContextFilter implements Filter {
 		try {
 			 //获得页面传递需要的开始记录，如果没有获取的到就从0条开始。
 			 String pagerOffset = request.getParameter("pager.offset");
-			
 			 pageOffset = (null!=pagerOffset&&!"".equals(pageOffset))?Integer.parseInt(pagerOffset):0;
 			
 			 //在线程安全相关SystemContext类中  设置显示多少条记录，从那条开始显示。

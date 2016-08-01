@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+
+	<!-- struts整体配置 -->
+	<constant name="struts.action.extension" value="action,do" /> 
+	<constant name="struts.configuration.xml.reload" value="true" /> 
+	
+	
+	
+	<!-- 整合Spring需要配置 -->
+	<constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory"  /> 
+
+
+
+	<!-- Struts2  Action -->
+	<package name="action" namespace="/" extends="struts-default">
+		
+		
+	<!-- 获得用户列表 user_list -->	
+	<action name="user_list" class="基于S2SH的分页.action.UserAction" method="list">
+		<result name="success">/WEB-INF/s2sh/user.jsp</result>
+	</action>
+	
+	
+	
+	
+	
+	
+	</package>
+</struts>

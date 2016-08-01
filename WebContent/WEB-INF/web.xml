@@ -27,7 +27,10 @@
 -->
 
 
-<!--  基于JSP的ThreadLocal分页.SystemContextFilter  -->
+
+
+
+<!--  基于JSP的ThreadLocal分页.SystemContextFilter 
 
 	<filter>
 		<filter-name>SystemContextFilter</filter-name>
@@ -51,7 +54,121 @@
 		<url-pattern>/user.do</url-pattern>
 	</servlet-mapping>
   
-  
-  
+   -->
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <!-- 基于S2SH的分页 -->
+   
+     	
+  	<!-- 本项目自身建立的配置每页显示多少条数据的Filter -->
+  	<filter>
+  		<description>页面每页显示多少条数据</description>
+  		<filter-name>SystemContextFilter</filter-name>
+  		<filter-class>基于S2SH的分页.filter.SystemContextFilter</filter-class>
+  		<init-param>
+  			<param-name>pageSize</param-name>
+  			<param-value>15</param-value>
+  		</init-param>
+  	</filter> 
+  	<filter-mapping>
+  		<filter-name>SystemContextFilter</filter-name>
+  		<url-pattern>/*</url-pattern>
+  	</filter-mapping>
+  	
+  	
+  	
+  	
+   
+   <!-- Spring相关配置 -->
+	<context-param>
+		<description>Spring监听器通过这个上下文获取beans.xml位置</description>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath*:beans.xml</param-value>
+	</context-param>
+
+   	
+   	<listener>
+   		<description>创建Spring的监听器</description>
+   		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+   	</listener>
+   	
+   
+   
+  	<filter>
+  		<description>Spring的字符编码filter,必须在OpenSessionInViewerFilter之前 </description>
+  		<filter-name>CharacterFilter</filter-name>
+  		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+  		<init-param>
+  			<param-name>encoding</param-name>
+  			<param-value>UTF-8</param-value>
+  		</init-param>
+  	</filter>
+  	<filter-mapping>
+  		<filter-name>CharacterFilter</filter-name>
+  		<url-pattern>/*</url-pattern>
+  	</filter-mapping>
+
+
+  	
+  	<filter>
+  	    <description>Spring中为Hibernate的Session提供的工具</description>
+  		<filter-name>openSessionInViewerFilter</filter-name>
+  		<filter-class>org.springframework.orm.hibernate5.support.OpenSessionInViewFilter</filter-class>
+  	</filter>
+  	<filter-mapping>
+  		<filter-name>openSessionInViewerFilter</filter-name>
+  		<url-pattern>/*</url-pattern>
+  	</filter-mapping>
+  	
+
+  	
+  	<!-- Struts2的过滤器 -->
+  	<filter>
+  		<description>Struts2过滤器</description>
+  		<filter-name>struts2</filter-name>
+  		<filter-class>org.apache.struts2.dispatcher.filter.StrutsPrepareAndExecuteFilter</filter-class>
+  	</filter>
+  	<filter-mapping>
+  		<filter-name>struts2</filter-name>
+  		<url-pattern>/*</url-pattern>
+  	</filter-mapping>
   
 </web-app>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
