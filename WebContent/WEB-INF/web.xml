@@ -104,7 +104,6 @@
    	</listener>
    	
    
-   
   	<filter>
   		<description>Spring的字符编码filter,必须在OpenSessionInViewerFilter之前 </description>
   		<filter-name>CharacterFilter</filter-name>
