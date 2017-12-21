@@ -64,12 +64,3 @@ END
 
 
 
-
-
-<br><br><br>
-## 联系方式
-qq:       [3792274](tencent://message/?uin=3792274)<br> 
-email:     <3792274@qq.com><br/>
-
-<br><br><br>
- 
